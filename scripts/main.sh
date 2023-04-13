@@ -55,7 +55,7 @@ if [[ $BUILD_ALL != "yes" ]]; then
 fi
 
 # We'll use this title on all menus
-backtitle="Orange Pi building script, http://www.orangepi.org" 
+backtitle="build system, https://www.armbian.com/"
 titlestr="Choose an option"
 
 # Warnings mitigation
@@ -230,6 +230,7 @@ if [[ -z $BOARD ]]; then
 	options+=("orangepi4"                   "Rockchip  RK3399 hexa core 4GB RAM GBE eMMC USB3 USB-C WiFi/BT")
 	options+=("orangepi4-lts"                 "Rockchip  RK3399 hexa core 4GB RAM GBE eMMC USB3 USB-C WiFi/BT")
 	options+=("orangepi800"                 "Rockchip  RK3399 hexa core 4GB RAM GBE eMMC USB3 USB-C WiFi/BT VGA")
+	options+=("bananapi-w3"                 "Rockchip  RK3588 octa core 4-16GB RAM GBE USB3 USB-C NvME")
 	options+=("orangepi5"                 "Rockchip  RK3588S octa core 4-16GB RAM GBE USB3 USB-C NvME")
 	options+=("orangepi5b"                 "Rockchip  RK3588S octa core 4-16GB RAM GBE USB3 USB-C WiFi/BT eMMC")
 	#options+=("orangepir1plus"              "Rockchip  RK3328 quad core 1GB RAM 2xGBE USB2 SPI")
