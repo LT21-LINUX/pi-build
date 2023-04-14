@@ -1,6 +1,8 @@
 rk3588_gpu_vpu_tweaks()
 {
-	if [[ ${BOARD} =~ orangepi5|orangepi5b && ${SELECTED_CONFIGURATION} == desktop && ${DESKTOP_ENVIRONMENT} =~ xfce|kde-plasma && ${RELEASE} == bullseye ]]; then
+#LT21
+#	if [[ ${BOARD} =~ orangepi5|orangepi5b && ${SELECTED_CONFIGURATION} == desktop && ${DESKTOP_ENVIRONMENT} =~ xfce|kde-plasma && ${RELEASE} == bullseye ]]; then
+	if [[ ${BOARD} =~ bananapi-w3|orangepi5|orangepi5b && ${SELECTED_CONFIGURATION} == desktop && ${DESKTOP_ENVIRONMENT} =~ xfce|kde-plasma && ${RELEASE} == bullseye ]]; then
 
 		chroot $SDCARD /bin/bash -c "chmod o+x /usr/lib/dbus-1.0/dbus-daemon-launch-helper"
 
@@ -125,7 +127,9 @@ rk3588_gpu_vpu_tweaks()
 
 	fi
 
-	if [[ ${BOARD} =~ orangepi5|orangepi5b && ${SELECTED_CONFIGURATION} == desktop && ${DESKTOP_ENVIRONMENT} =~ xfce|kde-plasma && ${RELEASE} == jammy ]]; then
+#LT21
+#	if [[ ${BOARD} =~ orangepi5|orangepi5b && ${SELECTED_CONFIGURATION} == desktop && ${DESKTOP_ENVIRONMENT} =~ xfce|kde-plasma && ${RELEASE} == jammy ]]; then
+	if [[ ${BOARD} =~ bananapi-w3|orangepi5|orangepi5b && ${SELECTED_CONFIGURATION} == desktop && ${DESKTOP_ENVIRONMENT} =~ xfce|kde-plasma && ${RELEASE} == jammy ]]; then
 
 		chroot $SDCARD /bin/bash -c "chmod o+x /usr/lib/dbus-1.0/dbus-daemon-launch-helper"
 
@@ -243,7 +247,9 @@ rk3588_gpu_vpu_tweaks()
 		chroot $SDCARD /bin/bash -c "rm /usr/lib/aarch64-linux-gnu/dri/*.so;mv /*.so /usr/lib/aarch64-linux-gnu/dri/"
 	fi
 
-	if [[ ${BOARD} =~ orangepi5|orangepi5b && ${SELECTED_CONFIGURATION} == desktop && ${DESKTOP_ENVIRONMENT} == xfce && ${RELEASE} == focal ]]; then
+#LT21
+#	if [[ ${BOARD} =~ orangepi5|orangepi5b && ${SELECTED_CONFIGURATION} == desktop && ${DESKTOP_ENVIRONMENT} == xfce && ${RELEASE} == focal ]]; then
+	if [[ ${BOARD} =~ bananapi-w3|orangepi5|orangepi5b && ${SELECTED_CONFIGURATION} == desktop && ${DESKTOP_ENVIRONMENT} == xfce && ${RELEASE} == focal ]]; then
 
 		chroot $SDCARD /bin/bash -c "chmod o+x /usr/lib/dbus-1.0/dbus-daemon-launch-helper"
 
@@ -359,8 +365,9 @@ rk3588_gpu_vpu_tweaks()
 
 	fi
 
-
-	if [[ ${BOARD} =~ orangepi5|orangepi5b && ${SELECTED_CONFIGURATION} == desktop && ${DESKTOP_ENVIRONMENT} =~ gnome && ${RELEASE} == jammy ]]; then
+#LT21
+#	if [[ ${BOARD} =~ orangepi5|orangepi5b && ${SELECTED_CONFIGURATION} == desktop && ${DESKTOP_ENVIRONMENT} =~ gnome && ${RELEASE} == jammy ]]; then
+	if [[ ${BOARD} =~ bananapi-w3|orangepi5|orangepi5b && ${SELECTED_CONFIGURATION} == desktop && ${DESKTOP_ENVIRONMENT} =~ gnome && ${RELEASE} == jammy ]]; then
 
 		[[ -f $SDCARD/etc/profile.d/x11.sh ]] && rm $SDCARD/etc/profile.d/x11.sh
 
