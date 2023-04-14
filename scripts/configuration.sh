@@ -7,12 +7,12 @@
 # warranty of any kind, whether express or implied.
 
 
-[[ -z $VENDOR ]] && VENDOR="Orange Pi"
-[[ -z $ROOTPWD ]] && ROOTPWD="orangepi" # Must be changed @first login
-[[ -z $OPI_USERNAME ]] && OPI_USERNAME="orangepi" 
-[[ -z $OPI_PWD ]] && OPI_PWD="orangepi" 
-[[ -z $MAINTAINER ]] && MAINTAINER="Orange Pi" # deb signature
-[[ -z $MAINTAINERMAIL ]] && MAINTAINERMAIL="leeboby@aliyun.com" # deb signature
+[[ -z $VENDOR ]] && VENDOR="Banana Pi"
+[[ -z $ROOTPWD ]] && ROOTPWD="bananapi" # Must be changed @first login
+[[ -z $OPI_USERNAME ]] && OPI_USERNAME="pi" 
+[[ -z $OPI_PWD ]] && OPI_PWD="bananapi" 
+[[ -z $MAINTAINER ]] && MAINTAINER="Banana Pi" # deb signature
+[[ -z $MAINTAINERMAIL ]] && MAINTAINERMAIL="bananapi@icloud.com" # deb signature
 [[ -z $DEB_COMPRESS ]] && DEB_COMPRESS="xz" # compress .debs with XZ by default. Use 'none' for faster/larger builds
 TZDATA=$(cat /etc/timezone) # Timezone for target is taken from host or defined here.
 USEALLCORES=yes # Use all CPU cores for compiling
